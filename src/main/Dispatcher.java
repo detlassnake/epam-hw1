@@ -5,26 +5,26 @@ import java.util.Scanner;
 public class Dispatcher  {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        int number = (int)(Math.random() * 1000);
+        int guessNumber = (int)(Math.random() * 1000);
         int input = 0;
-        int count = 0;
+        int guessCount = 0;
 
-        System.out.println("Guess number between 1 and 1000");
-        //System.out.println("Answer " + number);   //cheat
+        System.out.println("Guess guessNumber between 1 and 1000");
+        //System.out.println("Answer " + guessNumber);   //cheat
         do {
             while (!in.hasNextInt()) {
                 System.out.println("error");
                 in.next();
             }
             input = in.nextInt();
-            count++;
-            if (input > number) {
+            guessCount++;
+            if (input > guessNumber) {
                 System.out.println("Too high");
-            } else if (input == number){
-                System.out.println("Yoi win correct number is " + number + ", number of guesses it took to get the correct number is " + count);
+            } else if (input == guessNumber){
+                System.out.println("Yoi win correct guessNumber is " + guessNumber + ", guessNumber of guesses it took to get the correct guessNumber is " + guessCount);
             } else {
                 System.out.println("Too low");
             }
-        } while (number != input);
+        } while (guessNumber != input);
     }
 }
