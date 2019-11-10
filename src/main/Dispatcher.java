@@ -10,7 +10,7 @@ public class Dispatcher  {
         int count = 0;
 
         System.out.println("Guess number between 1 and 1000");
-        System.out.println("Answer " + number);
+        //System.out.println("Answer " + number);
         do {
             input = in.nextInt();
             count++;
