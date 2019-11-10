@@ -10,8 +10,12 @@ public class Dispatcher  {
         int count = 0;
 
         System.out.println("Guess number between 1 and 1000");
-        //System.out.println("Answer " + number);
+        //System.out.println("Answer " + number);   //cheat
         do {
+            while (!in.hasNextInt()) {
+                System.out.println("error");
+                in.next();
+            }
             input = in.nextInt();
             count++;
             if (input > number) {
