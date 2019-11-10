@@ -21,7 +21,7 @@ public class Dispatcher  {
             if (input > guessNumber) {
                 System.out.println("Too high");
             } else if (input == guessNumber){
-                System.out.println("Yoi win correct guessNumber is " + guessNumber + ", guessNumber of guesses it took to get the correct guessNumber is " + guessCount);
+                System.out.println("You win, correct number is " + guessNumber + ", number of guesses it took to get the correct number is " + guessCount);
             } else {
                 System.out.println("Too low");
             }
